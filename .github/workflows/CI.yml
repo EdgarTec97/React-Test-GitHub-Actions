@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm ci
-      - run: npm test --coverage
+      - run: npm test -- --coverage
         env:
           CI: true
       - name: Upload Test Coverge
